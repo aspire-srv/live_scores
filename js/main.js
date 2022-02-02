@@ -24,7 +24,7 @@ $(document).ready(function () {
     }
 
     $.get(url, function (data) {
-      console.log(data);
+      // console.log(data);
       var cricData = data.content;
       console.log(cricData);
       for (var i = 0; i < cricData.length; i++) {
@@ -34,9 +34,9 @@ $(document).ready(function () {
   })
 
   $.get(url, function (data) {
-      console.log(data);
+      // console.log(data);
       var cricData = data.content;
-      console.log(cricData);
+      // console.log(cricData);
       for (var i = 0; i < cricData.length; i++) {
         getData(cricData[i]);
       }

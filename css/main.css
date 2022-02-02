@@ -95,3 +95,19 @@ a{
 .heading{
     margin-left: 27px;
 }
+
+
+.attribution {
+    flex: 0 1 100%;
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 20px auto;
+    color: hsl(12, 88%, 59%);
+    order: 6;
+  }
+
+  .attribution a {
+    color: hsla(12, 88%, 59%, 0.7);
+  }
+
+  
