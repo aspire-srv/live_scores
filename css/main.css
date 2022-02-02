@@ -7,10 +7,15 @@
     padding: 0;
     margin: 0;
 }
+
+a{
+    text-decoration: none;
+}
 .conatiner{
-    width: 80%;
+    width: 60%;
     margin: 30px auto;
     min-width: 600px;
+    /* overflow-x: hidden; */
 }
 
 .product-conatiner{
