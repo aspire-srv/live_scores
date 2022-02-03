@@ -51,10 +51,10 @@ $(document).ready(function () {
 
     // if(data.scheduleEntry.matchStatus.outcome!=="N"){
     $(".product-conatiner").append(`<div class="product-img col-lg-12">
-  <div class="card mb-3" style="width: 60%;">
+  <div class="card mb-3" style="width: 100%; border:none">
   <div class="row g-0">
     <div class="">
-      <div class="card-body"  >
+      <div class="card-body" style="border:none;"  >
         <h5 class="card-title">${data.tournamentLabel}</h5>
         <p class="card-text"><span style="color:#${data.scheduleEntry.team1.team.primaryColor === "FFFFFF" ? 1866 + "db" : data.scheduleEntry.team1.team.primaryColor};">${data.scheduleEntry.team1.team.fullName}</span> <strong>vs</strong> <span style="color:#${data.scheduleEntry.team2.team.primaryColor === "FFFFFF" ? 1866 + "db" : data.scheduleEntry.team2.team.primaryColor};"> ${data.scheduleEntry.team2.team.fullName} </span>, ${data.scheduleEntry.description}</p>
         <p class="card-text"><small class="text-muted">${data.timestamp.slice(0, 10)}, ${data.scheduleEntry.venue.city}, ${data.scheduleEntry.venue.fullName}, ${data.scheduleEntry.venue.country}</small></p>
@@ -72,9 +72,10 @@ $(document).ready(function () {
       </div
     </div>
   </div>
+  
 </div>
-            
-   </div>`);
+<hr> 
+   </div> `);
   }
 
 });
